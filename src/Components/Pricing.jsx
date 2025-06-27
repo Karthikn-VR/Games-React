@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bgImage from '../assets/image.png'; // Dark background image
 
 export default function PricingPage() {
@@ -88,7 +89,7 @@ export default function PricingPage() {
         </form>
 
         <div className="text-center mt-5">
-          <a href="/" className="btn btn-outline-light">← Back to Home</a>
+          <Link to="/" className="btn btn-outline-light">← Back to Home</Link>
         </div>
       </div>
     

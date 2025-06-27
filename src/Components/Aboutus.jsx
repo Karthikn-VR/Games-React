@@ -1,5 +1,6 @@
 import React from 'react';
-import bgImage from '../assets/image.png'; // Your dark background
+import { Link } from 'react-router-dom';
+import bgImage from '../assets/image.png'; 
 
 export default function AboutPage() {
   return (
@@ -26,12 +27,12 @@ export default function AboutPage() {
           <div className="col-md-6">
             <div className="p-4 bg-black bg-opacity-50 rounded-3 h-100">
               <h4 className="mb-3 text-info">🎮 Games Included</h4>
-              <ul className="list-unstyled fs-5">
-                <li>✅ Rock Paper Scissors</li>
-                <li>✅ Number Guessing Game</li>
-                <li>✅ QR Code Generator</li>
-                <li>✅ Dice Roll Game</li>
-                <li>✅ Memory Match Game</li>
+              <ul className="list-unstyled fs-5"><i class="bi bi-joystick"></i>
+                <li>Rock Paper Scissors</li>
+                <li>Number Guessing Game</li>
+                <li>QR Code Generator</li>
+                <li>Dice Roll Game</li>
+                <li>Memory Match Game</li>
               </ul>
             </div>
           </div>
@@ -49,11 +50,10 @@ export default function AboutPage() {
         </div>
 
         <div className="text-center mt-5">
-          <a href="/" className="btn btn-outline-light px-4 py-2 fw-semibold">
-            Back to Home
-          </a>
+          <Link to="/" className="btn btn-outline-light">← Back to Home</Link>
         </div>
       </div>
-    </div>
+      </div>
+    
   );
 }
